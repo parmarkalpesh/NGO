@@ -35,14 +35,7 @@ function Home() {
               Empowering change by connecting NGOs with passionate volunteers
               and generous donors
             </p>
-            <div className="flex justify-center gap-4">
-              <button className="bg-[#004B8D] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#003a70] transition-all duration-300 transform hover:scale-105">
-                Get Started
-              </button>
-              <button className="bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-[#004B8D] transition-all duration-300 transform hover:scale-105">
-                Learn More
-              </button>
-            </div>
+
           </div>
         </div>
       </section>

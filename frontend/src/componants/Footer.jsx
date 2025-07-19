@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   FaFacebookF,
   FaTwitter,
@@ -23,10 +24,38 @@ function Footer() {
         <div>
           <h5 className="text-lg font-bold mb-3">Quick Links</h5>
           <ul className="text-sm space-y-2">
-            <li><a href="#" className="hover:underline">Home</a></li>
-            <li><a href="" className="hover:underline">About Us</a></li>
-            <li><a href="#" className="hover:underline">Projects</a></li>
-            <li><a href="#" className="hover:underline">Donate</a></li>
+            <li>
+              <Link
+                to="/"
+                className="hover:text-[#FFDE73] transition-colors duration-200"
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/event"
+                className="hover:text-[#FFDE73] transition-colors duration-200"
+              >
+                Events
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/donate"
+                className="hover:text-[#FFDE73] transition-colors duration-200"
+              >
+                Donate
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/Contact"
+                className="hover:text-[#FFDE73] transition-colors duration-200"
+              >
+                Contact
+              </Link>
+            </li>
           </ul>
         </div>
 
@@ -41,16 +70,40 @@ function Footer() {
         <div>
           <h5 className="text-lg font-bold mb-3">Follow Us</h5>
           <div className="flex space-x-4 mt-2 text-xl">
-            <a href="#" className="hover:text-yellow-300" aria-label="Facebook">
+            <a
+              href="https://facebook.com/ngoconnect"
+              className="hover:text-[#FFDE73] transition-colors duration-200"
+              aria-label="Facebook"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaFacebookF />
             </a>
-            <a href="#" className="hover:text-yellow-300" aria-label="Twitter">
+            <a
+              href="https://twitter.com/ngoconnect"
+              className="hover:text-[#FFDE73] transition-colors duration-200"
+              aria-label="Twitter"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaTwitter />
             </a>
-            <a href="#" className="hover:text-yellow-300" aria-label="Instagram">
+            <a
+              href="https://instagram.com/ngoconnect"
+              className="hover:text-[#FFDE73] transition-colors duration-200"
+              aria-label="Instagram"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaInstagram />
             </a>
-            <a href="#" className="hover:text-yellow-300" aria-label="LinkedIn">
+            <a
+              href="https://linkedin.com/company/ngoconnect"
+              className="hover:text-[#FFDE73] transition-colors duration-200"
+              aria-label="LinkedIn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaLinkedinIn />
             </a>
           </div>
